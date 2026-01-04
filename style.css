@@ -1,0 +1,142 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Theme */
+:root {
+    --primary: #4f46e5;
+    --background: #057ff9;
+    --text: #1f2933;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text);
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--primary);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-title {
+    font-size: 42px;
+    margin-bottom: 10px;
+    animation: slideUp 1s ease forwards;
+}
+
+.hero-text {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Pricing */
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+}
+
+.price-card {
+    background-color: white;
+    padding: 30px;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.price {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    font-size: 14px;
+}
+
+/* Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
